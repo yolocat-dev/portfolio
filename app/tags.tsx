@@ -1,4 +1,3 @@
-import { Experience } from "@/components/experience";
 import { Angular, Arduino, Assembly, AuthJS, CPP, CSharp, Docker, Firebase, JavaScript, NextJS, NodeJS, PostgreSQL, React, Rust, ShadCN, Swift, TailwindCSS, TypeScript } from "@/components/icons";
 
 export type Tag = {
