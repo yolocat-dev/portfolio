@@ -9,6 +9,7 @@
 		"lint": "next lint --fix"
 	},
 	"dependencies": {
+		"@vercel/speed-insights": "^1.0.12",
 		"clsx": "^2.1.1",
 		"embla-carousel-react": "^8.3.0",
 		"next": "14.2.14",
