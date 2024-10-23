@@ -28,10 +28,9 @@ export const metadata: Metadata = {
 			height: 630,
 			type: "image/png",
 		},
-		siteName: "yolocat",
 		title: "yolocat",
 		description: "software engineer",
-		url: "yolocat.dev",
+		url: "https://yolocat.dev",
 	},
 	twitter: {
 		images: {
