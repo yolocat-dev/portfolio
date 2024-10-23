@@ -1,8 +1,6 @@
 import { getMyAge } from "@/lib/age";
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-
 export async function GET() {
 	const interSemiBold = await fetch(new URL("../../../fonts/Inter-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
 	const jbMonoSemiBold = await fetch(new URL("../../../fonts/JetBrainsMonoNL-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
