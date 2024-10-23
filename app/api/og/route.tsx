@@ -1,9 +1,10 @@
 import { getMyAge } from "@/lib/age";
+import { readFile } from "fs/promises";
 import { ImageResponse } from "next/og";
 
 export async function GET() {
-	const interSemiBold = await fetch(new URL("../../../fonts/Inter-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
-	const jbMonoSemiBold = await fetch(new URL("../../../fonts/JetBrainsMonoNL-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
+	const interSemiBold = await readFile("fonts/Inter-SemiBold.ttf");
+	const jbMonoSemiBold = await readFile("fonts/JetBrainsMonoNL-SemiBold.ttf");
 
 	return new ImageResponse((
 		<div style={{
