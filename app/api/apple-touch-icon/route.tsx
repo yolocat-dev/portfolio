@@ -23,7 +23,8 @@ export async function GET() {
 			<span>@y</span>
 		</div>
 	), {
-		...size,
+		width: 180,
+		height: 180,
 		fonts: [
 			{
 				name: "JetBrains Mono",
