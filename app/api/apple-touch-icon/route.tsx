@@ -2,13 +2,6 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const size = {
-	width: 180,
-	height: 180,
-};
-
-export const contentType = "image/png";
-
 export async function GET() {
 	const jbMonoMedium = await fetch(new URL("../../../fonts/JetBrainsMonoNL-Medium.ttf", import.meta.url)).then((res) => res.arrayBuffer());
 

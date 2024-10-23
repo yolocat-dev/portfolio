@@ -3,14 +3,6 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "My portfolio";
-export const size = {
-	width: 1200,
-	height: 630,
-};
-
-export const contentType = "image/png";
-
 export async function GET() {
 	const interSemiBold = await fetch(new URL("../../../fonts/Inter-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
 	const jbMonoSemiBold = await fetch(new URL("../../../fonts/JetBrainsMonoNL-SemiBold.ttf", import.meta.url)).then((res) => res.arrayBuffer());
