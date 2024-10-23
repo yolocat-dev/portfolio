@@ -39,7 +39,7 @@ export function ContactLink({ icon, title, href }: { icon: React.ReactNode; titl
 			</div>
 			<a className="w-full flex flex-row items-center experience-content py-4 gap-4" href={href} target="_blank" referrerPolicy="no-referrer" rel="noopener">
 				{icon}
-				<h3 className="font-semibold text-2xl text-slate-500">{title}</h3>
+				<span className="font-semibold text-2xl text-slate-500">{title}</span>
 			</a>
 		</>
 	);

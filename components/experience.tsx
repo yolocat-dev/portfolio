@@ -44,7 +44,7 @@ export function Experience({ title, content, time, state, tags, github, images, 
 				</div>
 			</div>
 			<div className="w-full flex flex-col justify-center experience-content pb-16">
-				<h3 className={`${jetbrainsMono.className} font-semibold text-2xl text-slate-500`}>{state ? `${time} * ${state}` : time}</h3>
+				<span className={`${jetbrainsMono.className} font-semibold text-2xl text-slate-500`}>{state ? `${time} * ${state}` : time}</span>
 				<h2 className="font-semibold text-4xl">{title}</h2>
 
 				{images && images.length > 0 && (

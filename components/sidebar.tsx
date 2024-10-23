@@ -36,9 +36,9 @@ export function SidebarTitle({ children }: { children: React.ReactNode; }) {
 
 export function SidebarSubtitle({ children, secondary }: { children: React.ReactNode; secondary?: boolean; }) {
 	return (
-		<h3 className={cn("text-3xl font-semibold text-nowrap", jetbrainsMono.className, secondary ? "text-slate-700" : "text-slate-500")}>
+		<h2 className={cn("text-3xl font-semibold text-nowrap", jetbrainsMono.className, secondary ? "text-slate-700" : "text-slate-500")}>
 			{children}
-		</h3>
+		</h2>
 	)
 }
 

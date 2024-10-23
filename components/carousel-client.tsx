@@ -47,10 +47,10 @@ export function CarouselWrapper({ children }: { children: React.ReactNode; }) {
 			</div>
 			<div className={cn("absolute w-40 h-full bg-gradient-to-r transition-opacity opacity-0 duration-150 from-background/75 to-transparent rounded-l-3xl left-0 top-0", canScrollPrev && "group-hover:opacity-100")}></div>
 			<div className={cn("absolute w-40 h-full bg-gradient-to-l transition-opacity opacity-0 duration-150 from-background/75 to-transparent rounded-r-3xl right-0 top-0", canScrollNext && "group-hover:opacity-100")}></div>
-			<button className={cn("absolute transition-opacity opacity-0 duration-150 text-slate-200 left-4 top-0 h-full w-20 grid place-items-center pointer-events-none", canScrollPrev && "group-hover:opacity-100 pointer-events-auto")} onClick={scrollPrev}>
+			<button aria-label="View Previous Image" className={cn("absolute transition-opacity opacity-0 duration-150 text-slate-200 left-4 top-0 h-full w-20 grid place-items-center pointer-events-none", canScrollPrev && "group-hover:opacity-100 pointer-events-auto")} onClick={scrollPrev}>
 				<ChevronLeft size={48} />
 			</button>
-			<button className={cn("absolute transition-opacity opacity-0 duration-150 text-slate-200 right-4 top-0 h-full w-20 grid place-items-center pointer-events-none", canScrollNext && "group-hover:opacity-100 pointer-events-auto")} onClick={scrollNext}>
+			<button aria-label="View Next Image" className={cn("absolute transition-opacity opacity-0 duration-150 text-slate-200 right-4 top-0 h-full w-20 grid place-items-center pointer-events-none", canScrollNext && "group-hover:opacity-100 pointer-events-auto")} onClick={scrollNext}>
 				<ChevronRight size={48} />
 			</button>
 		</div>
