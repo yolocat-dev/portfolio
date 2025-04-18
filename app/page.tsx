@@ -21,7 +21,7 @@ export default function Portfolio() {
 				<SidebarName>
 					<SidebarTitle>{"yolocat"}</SidebarTitle>
 					<SidebarSubtitle>{"Software Engineer"}</SidebarSubtitle>
-					<SidebarSubtitle secondary>{`${getMyAge()} * Sweden`}</SidebarSubtitle>
+					<SidebarSubtitle secondary>{"Sweden"}</SidebarSubtitle>
 				</SidebarName>
 				<SidebarNavigation>
 					<SidebarNavItem section="experience">
