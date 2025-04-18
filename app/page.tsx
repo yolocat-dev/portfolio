@@ -2,7 +2,6 @@ import { Content, ContentTitle, Page, Section } from "@/components/content";
 import { Experience, ExperienceAndProjects, TimelineEnd, TimelineStart } from "@/components/experience";
 import { Sidebar, SidebarTitle, SidebarName, SidebarSubtitle, SidebarNavigation, SidebarNavLink } from "@/components/sidebar";
 import { SidebarNavItem } from "@/components/sidebar-client";
-import { getMyAge } from "@/lib/age";
 import { tags } from "./tags";
 import { Email, GitHub, Discord } from "@/components/icons";
 import Quote from "@/components/quote";
